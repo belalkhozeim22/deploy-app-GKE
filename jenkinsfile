@@ -19,7 +19,7 @@ pipeline {
             }
         stage('Docker run') {
             steps {
-                sh 'docker run -p 3000:3000 abdelrahman1111/start-with-docker:nodeapp' }
+                sh 'kubectl apply -Rf ./* ' }
             }
         }
     }
