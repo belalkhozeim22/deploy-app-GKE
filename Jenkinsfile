@@ -8,13 +8,13 @@ pipeline {
             }
         stage('tagging the image') {
             steps {
-                sh 'docker tag helloDevOps:latest abdelrahman1111/grad-proj:helloDevOps'}
+                sh 'docker tag hello-devops:latest abdelrahman1111/grad-proj:hello-devops'}
             }
         stage('Docker push') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'hamada', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
                     sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
-                    sh 'docker push abdelrahman1111/grad-proj:helloDevOps'   }
+                    sh 'docker push abdelrahman1111/grad-proj:hello-devops'   }
                 }
             }
         stage('app deploy') {
