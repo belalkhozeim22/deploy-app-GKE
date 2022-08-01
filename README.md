@@ -3,7 +3,7 @@ Now after setting up the jenkins pods and grant him the needed permission, i can
 So i am gonna explain that in steps 
 ## Build the app
 - I built an application eng.mahmoud alaa gives as its code using Docker file 
-[The code repo]{https://github.com/mahmoud254/jenkins_nodejs_example.git}
+[The code repo](https://github.com/mahmoud254/jenkins_nodejs_example.git)
 ```
 FROM node:12
 COPY nodeapp /nodeapp
@@ -67,10 +67,10 @@ spec:
 
 ## Creating the Jenknsfile
 - As i am gonna create my pipeline using SCM i need to create a jenkins file in my repo so i created a Jenkinsfile with four stage 
-1. Stage *build app* to build the using `docker build`
-2. Stage *tagging the image* to tag th image to be able to push it to my dockerhub repo 
-3. Stage *push the image* to push my tagged image using my created credentials 
-4. Stage *app deploy* to create the app deployment and app service using `kubectl apply` command 
+1. Stage **build app** to build the using `docker build`
+2. Stage **tagging the image** to tag th image to be able to push it to my dockerhub repo 
+3. Stage **push the image** to push my tagged image using my created credentials 
+4. Stage **app deploy** to create the app deployment and app service using `kubectl apply` command 
 
 ```
 #!groovy
@@ -110,8 +110,8 @@ pipeline {
 
 
 ![Screenshot from 2022-08-01 21-21-24](https://user-images.githubusercontent.com/104630009/182247257-eed67905-916b-4500-ab4a-823d1d8b5986.png)
-- Both service and deployment are working great, just wait a few seconds til my loadbalancer be ready  
+- Both service and deployment are working great, just wait a few seconds til my loadbalancer be ready and take its external IP and test it on my browser on port 300 and it works!
 
 ![Screenshot from 2022-08-01 21-19-48](https://user-images.githubusercontent.com/104630009/182247477-4ab7beee-98b5-44ff-979d-c1f012b6cb9d.png)
 
-### Thanks for your time
+
