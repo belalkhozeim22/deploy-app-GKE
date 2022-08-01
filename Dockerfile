@@ -1,5 +1,5 @@
-FROM alpine:latest
-WORKDIR /var/www/html
-
-EXPOSE 80
-CMD ["httpd-foreground"]
+FROM node:12
+COPY nodeapp /nodeapp
+WORKDIR /nodeapp
+RUN npm install
+CMD ["node", "/nodeapp/app.js"]
