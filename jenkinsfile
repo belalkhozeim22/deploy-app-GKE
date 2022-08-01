@@ -17,9 +17,9 @@ pipeline {
                     sh 'docker push abdelrahman1111/grad-proj:helloDevOps'   }
                 }
             }
-        stage('Docker run') {
+        stage('app deploy') {
             steps {
-                sh 'kubectl apply -Rf ./* ' }
+                sh 'kubectl apply -Rf ./app-yamls' }
             }
         }
     }
