@@ -4,7 +4,7 @@ pipeline {
     stages {           
         stage('Build app') {
             steps {
-                sh 'docker build -t helloDevOps:latest -f Dockerfile .'}
+                sh 'docker build -t hello-devops:latest -f Dockerfile .'}
             }
         stage('tagging the image') {
             steps {
