@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nodeapp
-        image: abdelrahman1111/grad-proj:helloDevOps
+        image: abdelrahman1111/grad-proj:hello-devops
         ports:
         - containerPort: 3000
