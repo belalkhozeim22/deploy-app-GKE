@@ -107,9 +107,11 @@ pipeline {
 ![Screenshot from 2022-08-01 21-19-39](https://user-images.githubusercontent.com/104630009/182247075-12992097-6f0c-4fb7-995c-e6630f495ebf.png)
 - Making sure everything is working as it should be
 ![Screenshot from 2022-08-01 21-21-33](https://user-images.githubusercontent.com/104630009/182247237-13ae3125-4f99-4309-be15-c99f64077856.png)
+
+
 ![Screenshot from 2022-08-01 21-21-24](https://user-images.githubusercontent.com/104630009/182247257-eed67905-916b-4500-ab4a-823d1d8b5986.png)
 - Both service and deployment are working great, just wait a few seconds til my loadbalancer be ready  
-![Screenshot from 2022-08-01 21-21-33](https://user-images.githubusercontent.com/104630009/182246820-884f1af9-a774-4c91-8784-235fbcb38977.png)
 
+![Screenshot from 2022-08-01 21-19-48](https://user-images.githubusercontent.com/104630009/182247477-4ab7beee-98b5-44ff-979d-c1f012b6cb9d.png)
 
-
+### Thanks for your time
