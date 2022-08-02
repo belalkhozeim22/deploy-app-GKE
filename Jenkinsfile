@@ -12,7 +12,7 @@ pipeline {
             }
         stage('push the image') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'hamada', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
+                withCredentials([usernamePassword(credentialsId: 'DockerhubCredentials', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
                     sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
                     sh 'docker push abdelrahman1111/grad-proj:hello-devops'   }
                 }
